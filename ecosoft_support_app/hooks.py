@@ -9,6 +9,29 @@ app_color = "grey"
 app_email = "kittiu@ecosoft.co.th"
 app_license = "MIT"
 
+fixtures = [
+    {
+		"dt": "Custom Field",
+		"filters": [("name", "in", [
+			"Issue-time_spent",
+			"Issue-project_name",
+			"Project-support_hours",
+			"Project-support_hours_used",
+		])],
+	},
+    {
+		"dt": "Project Type",
+		"filters": [["project_type", "in", ["Support Package"]]],
+	},
+	{
+		"dt": "Property Setter",
+		"filters": [["name", "in", [
+			"Issue-project-mandatory_depends_on",
+			"Issue-customer-reqd",
+		]]],
+	},
+]
+
 # Includes in <head>
 # ------------------
 
@@ -95,13 +118,13 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Issue": {
+		"validate": [
+			"ecosoft_support_app.ecosoft_support_app.support.update_project_support_hours",
+		],
+	},
+}
 
 # Scheduled Tasks
 # ---------------
