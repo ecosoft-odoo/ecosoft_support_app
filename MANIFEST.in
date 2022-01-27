@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include ecosoft_support_app *.css
+recursive-include ecosoft_support_app *.csv
+recursive-include ecosoft_support_app *.html
+recursive-include ecosoft_support_app *.ico
+recursive-include ecosoft_support_app *.js
+recursive-include ecosoft_support_app *.json
+recursive-include ecosoft_support_app *.md
+recursive-include ecosoft_support_app *.png
+recursive-include ecosoft_support_app *.py
+recursive-include ecosoft_support_app *.svg
+recursive-include ecosoft_support_app *.txt
+recursive-exclude ecosoft_support_app *.pyc
