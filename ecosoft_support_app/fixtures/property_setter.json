@@ -32,5 +32,39 @@
   "property_type": "Check",
   "row_name": null,
   "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Issue",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "project",
+  "modified": "2022-02-01 20:20:39.983721",
+  "name": "Issue-project-reqd",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "reqd",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Issue",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "project",
+  "modified": "2022-02-01 20:20:40.088575",
+  "name": "Issue-project-allow_in_quick_entry",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "allow_in_quick_entry",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "1"
  }
 ]
