@@ -122,7 +122,7 @@ fixtures = [
 
 doc_events = {
 	"Issue": {
-		"validate": [
+		"on_update": [
 			"ecosoft_support_app.ecosoft_support_app.support.update_project_support_hours",
 		],
 	},
