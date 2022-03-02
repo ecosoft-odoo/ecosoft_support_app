@@ -27,9 +27,8 @@ fixtures = [
 		"dt": "Property Setter",
 		"filters": [["name", "in", [
 			"Issue-project-mandatory_depends_on",
-			"Issue-customer-reqd",
 			"Issue-project-allow_in_quick_entry",
-			"Issue-project-reqd",
+			"Issue-customer-fetch_if_empty",
 		]]],
 	},
 ]
