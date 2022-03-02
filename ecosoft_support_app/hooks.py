@@ -29,6 +29,7 @@ fixtures = [
 			"Issue-project-mandatory_depends_on",
 			"Issue-project-allow_in_quick_entry",
 			"Issue-customer-fetch_if_empty",
+			"Issue-customer-fetch_from",
 		]]],
 	},
 ]
